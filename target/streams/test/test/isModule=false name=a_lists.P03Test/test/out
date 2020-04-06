@@ -1,0 +1,7 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mP03Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mP03 List method[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should find kth element by built in array indexing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should throw outofboundsexception if length of array less than k[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mP03 kth element by tail recursion[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should find penultimate element if correct list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should throw exception if there is empty list[0m[0m

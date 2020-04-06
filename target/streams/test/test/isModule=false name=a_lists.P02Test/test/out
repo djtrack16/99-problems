@@ -1,0 +1,7 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mP02Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mP02 List method[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should find penultimate element if list is valid[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should throw outofboundsexception if length of array less than 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mP02 penultimate element by tail recursion[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should find penultimate element if correct list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should throw exception if there is empty list[0m[0m
