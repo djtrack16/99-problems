@@ -1,0 +1,2 @@
+test:testOnly src/test/scala/P05Test.scala
+testOnly src/test/scala/P05Test.scala

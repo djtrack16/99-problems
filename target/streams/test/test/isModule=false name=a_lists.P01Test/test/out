@@ -1,0 +1,8 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mP01Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mP01 List builtin method[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should find last element if correct list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mP01 Last element by length[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should find last element if correct list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mP01 last element by tail recursion[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should find last element if correct list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should find last element as Nil if empty list[0m[0m
