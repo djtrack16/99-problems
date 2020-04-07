@@ -5,4 +5,4 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should find last element if correct list[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mP01 last element by tail recursion[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should find last element if correct list[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should find last element as Nil if empty list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should throw exception if there is empty list[0m[0m
