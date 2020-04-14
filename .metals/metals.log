@@ -1,0 +1,128 @@
+INFO  started: Metals version 0.8.4 in workspace '/Users/dliddell/Desktop/code/99-problems-scala'
+INFO  time: initialize in 2.47s
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P28Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P28.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala' because it doesn't belong to a build target.
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala' because it doesn't belong to a build target.
+Apr 14, 2020 9:00:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 280
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P19.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P18.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P16.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P15.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P28.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P31.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P32.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P35.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P31.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P28.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala' because it doesn't belong to a build target.
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P28Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P19Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P18Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P15Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P19Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P28Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P28Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala' because it doesn't belong to a build target.
+Apr 14, 2020 9:05:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 639
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala' because it doesn't belong to a build target.
+something's wrong: no file:///Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala in List[A]RangePosition(file:///Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P26.scala, 659, 659, 666)
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala' because it doesn't belong to a build target.
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala' because it doesn't belong to a build target.
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P28Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P35.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P35.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P32.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P31.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P31.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P28.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P18.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P19.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P32.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P26Test.scala' because it doesn't belong to a build target.
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/P01Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/a_lists/P01Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/a_lists/P26Test.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P31.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P31.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P31.scala' because it doesn't belong to a build target.
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P32.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/a_lists/P02Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P31Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/a_lists/P28Test.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala' because it doesn't belong to a build target.
+Apr 14, 2020 9:25:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2097
+Apr 14, 2020 9:26:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2165
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P31Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P31Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P31Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P31Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P31Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P31Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P31Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P31Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P31Test.scala' because it doesn't belong to a build target.
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P31Test.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P31Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P31Test.scala' because it doesn't belong to a build target.
+Apr 14, 2020 9:28:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2725
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala' because it doesn't belong to a build target.
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P32.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala' because it doesn't belong to a build target.
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala' because it doesn't belong to a build target.
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala
+WARN  no build target for: /Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala
+WARN  code navigation does not work for the file '/Users/dliddell/Desktop/code/99-problems-scala/src/test/scala/b_arithmetic/P32Test.scala' because it doesn't belong to a build target.

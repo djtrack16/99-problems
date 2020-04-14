@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/a_lists/P08.scala:9:1: Missing closing brace `}` assumed here[0m
-[0m[[0m[31merror[0m] [0m[0mdef deleteConsecutiveDups[A](xs: List[A]): List[A] = {[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems-scala/src/main/scala/b_arithmetic/P35.scala:41:1: Unmatched closing brace '}' ignored here[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
 [0m[[0m[31merror[0m] [0m[0m^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
