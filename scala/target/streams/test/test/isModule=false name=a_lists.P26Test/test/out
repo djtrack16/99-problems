@@ -1,0 +1,8 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mP26Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mP26 Get K distinct combinations from elements of N elements[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return list of empty list if list is empty but k is valid[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return list of empty list if k is 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return empty list if k > length of list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should choose 3 unique combinations from 4 total[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should choose 2 unique combinations from 4 total[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should choose 1 unique combinations from 4 total if k is 4[0m[0m

@@ -1,0 +1,5 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mP15Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mP15 Duplicate each element in a list N times[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should work for non empty inputs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should work for empty inputs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return same list for n <= 1[0m[0m

@@ -1,0 +1,7 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mP19Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mP19 Drop every Nth element in a list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should work for 0 < n < xs.length [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should work for n < 0 [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should work for n > xs.length[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should work for n < xs.length but absolute value of n is[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should do nothing if n % xs.length == 0 [0m[0m

@@ -1,0 +1,43 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:3:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.{FunSpec, Matchers}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:5:23: not found: type FunSpec[0m
+[0m[[0m[31merror[0m] [0m[0mclass P01Test extends FunSpec with Matchers {[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:5:36: not found: type Matchers[0m
+[0m[[0m[31merror[0m] [0m[0mclass P01Test extends FunSpec with Matchers {[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:7:3: not found: value describe[0m
+[0m[[0m[31merror[0m] [0m[0m  describe("P01 List builtin method") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:8:5: not found: value it[0m
+[0m[[0m[31merror[0m] [0m[0m    it("should find last element if correct list") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:9:7: not found: value P01[0m
+[0m[[0m[31merror[0m] [0m[0m      P01.last(List("a", "b", "c", "d")) should be("d")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:9:49: not found: value be[0m
+[0m[[0m[31merror[0m] [0m[0m      P01.last(List("a", "b", "c", "d")) should be("d")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:13:3: not found: value describe[0m
+[0m[[0m[31merror[0m] [0m[0m  describe("P01 List recursive method") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:14:5: not found: value it[0m
+[0m[[0m[31merror[0m] [0m[0m    it("should find last element if correct list") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:15:7: not found: value P01[0m
+[0m[[0m[31merror[0m] [0m[0m      P01.lastRecursive(List("a", "b", "c", "d")) should be("d")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:15:58: not found: value be[0m
+[0m[[0m[31merror[0m] [0m[0m      P01.lastRecursive(List("a", "b", "c", "d")) should be("d")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:18:5: not found: value it[0m
+[0m[[0m[31merror[0m] [0m[0m    it("should find last element as Nil if empty list") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:19:7: not found: value P01[0m
+[0m[[0m[31merror[0m] [0m[0m      P01.lastRecursive(List()) should be(Nil)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dliddell/Desktop/code/99-problems/src/test/P01Test.scala:19:40: not found: value be[0m
+[0m[[0m[31merror[0m] [0m[0m      P01.lastRecursive(List()) should be(Nil)[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m14 errors found[0m

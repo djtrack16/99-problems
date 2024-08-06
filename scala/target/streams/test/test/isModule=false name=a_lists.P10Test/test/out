@@ -1,0 +1,4 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mP10Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mP10 Run length encoding for a single list 'consecutive duplicates and their length'[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should work for non empty inputs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should work for empty inputs[0m[0m
