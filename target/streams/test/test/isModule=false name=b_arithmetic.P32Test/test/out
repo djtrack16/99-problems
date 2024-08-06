@@ -1,7 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mP32Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mP32 Find the greatest common divisor of a and b[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- gcd of 2 and 100 is 2[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- if b is 0, always a[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- gcd of 99 and 11 is 11[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- gcd of 0 and 100 is 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- gcd of 99 and 100 is 1[0m[0m

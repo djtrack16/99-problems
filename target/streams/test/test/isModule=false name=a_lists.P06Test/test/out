@@ -1,5 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mP06Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mP06 check if list is a palindrome[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- builtin method should reverse a list and compare to that [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- recursive method should work for valid inputs[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- recursive method should return true for empty list or list of size 1[0m[0m

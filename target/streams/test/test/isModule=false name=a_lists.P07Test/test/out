@@ -1,4 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mP07Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mP07 flatten a nested list[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should flatten all nested levels with 'roll your own' method[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should flatten all nested levels with builtin method[0m[0m

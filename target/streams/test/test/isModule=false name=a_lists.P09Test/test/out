@@ -1,4 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mP09Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mP09 Pack consecutive duplicates into sublists in a single list[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should work for non empty inputs[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should work for empty inputs[0m[0m

@@ -1,4 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mP11Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mP11 Run length encoding for a single list (but distinct elements are not in tuples))[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should work for non empty inputs[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should work for empty inputs[0m[0m

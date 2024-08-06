@@ -1,5 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mP16Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mP16 Drop every Nth element in a list[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should work for non empty inputs[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should work for empty inputs[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return same list for n <= 1[0m[0m

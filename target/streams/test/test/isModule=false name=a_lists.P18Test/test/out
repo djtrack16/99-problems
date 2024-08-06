@@ -1,8 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mP18Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mP18 Drop every Nth element in a list[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should work for valid i and valid k[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should work for normal i and k > length of list[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should work for i < 0 and normal k[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give same list if i < 0 and k > length of list[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return empty list if i >= k[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should work for empty inputs[0m[0m

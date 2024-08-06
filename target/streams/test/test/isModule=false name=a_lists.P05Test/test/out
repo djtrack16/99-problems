@@ -1,6 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mP05Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mP05 reverse list[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- builtin method should reverse a list [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- method with foldleft should reverse[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- recursive method should return empty list if xs is nil or empty[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- recursive method should work for correct input[0m[0m

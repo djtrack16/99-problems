@@ -1,6 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mP04Test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mP04 length methods[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- builtin method should return length [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- method with fold should work[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- first recursive method should work[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- second recursive method should work[0m[0m
