@@ -9,7 +9,8 @@ class List
 
   # P07 (**) Flatten a nested list structure.
   def flatten
-
+    mutable_list = list
+    flatten_rec(mutable_list)
   end
 
   # P08 (**) Eliminate consecutive duplicates of list elements.
@@ -75,6 +76,18 @@ class List
     end
     res << [count, prev] if prev
     res
+  end
+
+  private
+
+  def flatten_rec(l)
+    return l if l.empty?
+    first,*rest = l
+    if first.is_a?(Array)
+      flatten_rec(first)
+    else
+      [first]
+    end + flatten_rec(rest)
   end
 
 end

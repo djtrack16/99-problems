@@ -3,6 +3,27 @@ require_relative '../a_lists/list'
 describe List do
 
   describe '#flatten' do
+    it 'should flatten list of lists' do
+      instance = List.new([[1],[2,[4,5,[6,[8,9],7]]],[[10,99],3]])
+      expect(instance.flatten).to eq([1,2,4,5,6,8,9,7,10,99,3])
+    end
+
+    it 'should do nothing if normal list' do
+      instance = List.new([1,2,3])
+      expect(instance.flatten).to eq([1,2,3])
+
+      instance = List.new([[1],[2],[3]])
+      expect(instance.flatten).to eq([1,2,3])
+    end
+
+    it 'should flatten list of random objects' do
+      instance = List.new(
+        ['f', [1],[2,[4,5,:x,[6,7]],{a: :b, c: [8,9]}],[3,[11,[:d, :e],12]]]
+      )
+      expect(instance.flatten).to eq(
+        ['f',1,2,4,5,:x,6,7,{a: :b, c: [8,9]},3,11,:d,:e,12]
+      )
+    end
   end
 
   describe '#compress' do
