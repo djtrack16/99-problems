@@ -78,7 +78,32 @@ class List
     res
   end
 
-  private
+  # P26 (**) Generate the combinations of K distinct objects chosen from the N elements of a list.
+  # In how many ways can a committee of 3 be chosen from a group of 12 people?  We all know that there are 
+  # C(12,3)= 220 possibilities
+  # C(N,K) denotes the well-known binomial coefficient). For pure mathematicians, this result may be great.
+  # But we want to really generate all the possibilities.
+  def combinations(n)
+    remaining = list
+    result = []
+    generate_combinations_rec(n, result, remaining, [])
+    result
+  end
+
+  # Side note: This is the way to for N choose K DISTINCT elements -- that is the "combination"
+  # "Distinct" means irrespective of order
+  # If order mattered, you would want the N choose K permutations
+  # To get the permutations, change the code "remaining[i+1..]" to "remaining - [elem]"
+  def generate_combinations_rec(k,result, remaining, combo)
+    if k == 0
+      result << combo
+      return
+    end
+    remaining.each_with_index do |elem, i|
+      generate_combinations_rec(k-1, result, remaining[i+1..], combo + [elem])
+    end
+  end
+
 
   def flatten_rec(l)
     return l if l.empty?

@@ -163,4 +163,63 @@ describe List do
       )
     end
   end
+
+  describe '#combinations' do
+    it 'should be empty for negative K' do
+      instance = List.new([1,2])
+      expect(instance.combinations(-1)).to eq([])
+    end 
+
+    it 'should be empty for K greater than N (length of list)' do
+      instance = List.new([1,2,3])
+      expect(instance.combinations(4)).to eq([])
+    end
+
+    it 'should be 1 array for K = 0 (aka 1 way to choose 0 elements)' do
+      instance = List.new([1,2,3])
+      expect(instance.combinations(0)).to eq([[]])
+    end
+
+    it 'should choose K from N correctly, generate combinations' do
+      instance = List.new([1,2,3])
+      expect(
+        instance.combinations(2)
+      ).to eq(
+        [[1,2],[1,3],[2,3]]
+      )
+
+      instance = List.new([1,2,3,4])
+      expect(
+        instance.combinations(2)
+      ).to eq(
+        [[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]
+      )
+
+      instance = List.new([1,2,3,4,5,6])
+      expect(
+        instance.combinations(3)
+      ).to eq([
+        [1, 2, 3],
+        [1, 2, 4],
+        [1, 2, 5],
+        [1, 2, 6],
+        [1, 3, 4],
+        [1, 3, 5],
+        [1, 3, 6],
+        [1, 4, 5],
+        [1, 4, 6],
+        [1, 5, 6],
+        [2, 3, 4],
+        [2, 3, 5],
+        [2, 3, 6],
+        [2, 4, 5],
+        [2, 4, 6],
+        [2, 5, 6],
+        [3, 4, 5],
+        [3, 4, 6],
+        [3, 5, 6],
+        [4, 5, 6]
+      ])
+    end
+  end
 end
