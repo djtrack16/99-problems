@@ -90,6 +90,8 @@ class List
     result
   end
 
+  private
+
   # Side note: This is the way to for N choose K DISTINCT elements -- that is the "combination"
   # "Distinct" means irrespective of order
   # If order mattered, you would want the N choose K permutations
