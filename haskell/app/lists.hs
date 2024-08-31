@@ -129,10 +129,11 @@ module Lists where
   slice i k xs = take (k-i) (drop i xs)
 
   -- P19 (**) Rotate a list N places to the left.
-
+  -- Use remainder (aka if n is 8 and length of xs is 4, do nothing)
+  -- But if n is 9 and length of xs is 4, rotate by 1 .... wraparound logic
   rotate :: Int -> [a] -> [a]
   rotate 0 xs = xs
-  rotate n xs = let remainder = mod n (length xs)
+  rotate n xs = let remainder = rem n (length xs)
                     pivot = if remainder < 0 then remainder + length xs else remainder
                 in drop pivot xs ++ take pivot xs
 {-

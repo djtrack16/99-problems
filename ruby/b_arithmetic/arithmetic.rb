@@ -71,7 +71,7 @@ class Arithmetic
   # Given a range of integers by its lower and upper limit, print a list of all even numbers and their Goldbach composition.
   def self.goldbach_list(lower_limit, upper_limit)
     lower = lower_limit.even? ? lower_limit : lower_limit + 1
-    upper = upper_limit.even? ? upper_limit : lower_limit - 1
+    upper = upper_limit.even? ? upper_limit : upper_limit - 1
     (lower..upper).step(2).map do |n|
       [
         n,
@@ -84,7 +84,7 @@ class Arithmetic
   # Very rarely, the primes are both bigger than, say, 50.  Try to find out how many such cases there are in the range 2..3000.
   def self.goldbach_list_limited(lower_limit, upper_limit, prime_minimum_value)
     lower = lower_limit.even? ? lower_limit : lower_limit + 1
-    upper = upper_limit.even? ? upper_limit : lower_limit - 1
+    upper = upper_limit.even? ? upper_limit : upper_limit - 1
     (lower..upper).step(2).each_with_object([]) do |n, result|
       gbn = goldbach_numbers_with_min(n, prime_minimum_value)
       result << [ n, gbn ] unless gbn.empty?  
