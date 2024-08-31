@@ -67,7 +67,7 @@ module Arithmetic where
   goldbachNumbers :: Int -> [Int]
   goldbachNumbers n = let pairs = filter (\m -> isPrime m && isPrime (n - m)) [2..n]
                           m = if null pairs then 0 else m
-                      in if m > 0 then [] else [m, n - m]
+                      in if m == 0 then [] else [m, n - m]
 
   -- P41 (**) A list of Goldbach compositions.
   -- Given a range of integers by its lower and upper limit, print a list of all even numbers and their Goldbach composition.
