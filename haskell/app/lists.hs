@@ -136,16 +136,6 @@ module Lists where
   rotate n xs = let remainder = rem n (length xs)
                     pivot = if remainder < 0 then remainder + length xs else remainder
                 in drop pivot xs ++ take pivot xs
-{-
-    var pivot = n % xs.length
-    pivot = if (pivot < 0) pivot + xs.length else pivot
-    xs.drop(pivot) ++ xs.take(pivot)
-
-
-    let index = if n > 0 then n else length xs - abs n
-                    (b,c) = splitAt index xs
-                in concat (reverse (head c ++ head b))
--}
 
   -- P26 (**) Generate the combinations of K distinct objects chosen from the N elements of a list.
   -- In how many ways can a committee of 3 be chosen from a group of 12 people?  We all know that there are 
