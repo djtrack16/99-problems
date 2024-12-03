@@ -6,9 +6,7 @@ import {
     takeLeft,
     takeLeftWhile
   } from 'fp-ts/lib/Array'
-import { groupBy } from 'fp-ts/lib/ReadonlyNonEmptyArray';
 import { Option, some, none } from 'fp-ts/lib/Option';
-//import { duplicate } from 'fp-ts/lib/ReadonlyNonEmptyArray';
 
 
 module Lists {
