@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fp-ts": "^2.16.9",
+    "ts-pattern": "^5.5.0"
+  }
+}
