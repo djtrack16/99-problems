@@ -12,13 +12,17 @@ import { pipe } from 'fp-ts/lib/function';
 
 module Arithmetic {
 
-//  -- P31 (**) Determine whether a given integer number is prime.
-//  -- Prime numbers to test: http://compoasso.free.fr/primelistweb/page/prime/liste_online_en.php
-
-  function range(start: number, end: number): number[] {
-    return Array.from({ length: end - start + 1 }, (_, i) => start + i);
+  function range(start: number, end: number, step: number = 1): number[] {
+    const result: number[] = [];
+    for (let i = start; i < end; i += step) {
+      result.push(i);
+    }
+    return result;
   }
     
+
+//  -- P31 (**) Determine whether a given integer number is prime.
+//  -- Prime numbers to test: http://compoasso.free.fr/primelistweb/page/prime/liste_online_en.php
   function isPrime (n: number): Boolean {
     const sqrt = Math.sqrt(n)
     const isDivisibleBy = ((m => n % m == 0))
@@ -103,11 +107,6 @@ module Arithmetic {
           (factor - 1)*(factor^(multiplicity - 1))
     )
     return factorsMultiplicity.map(func).reduce((acc, val) => acc * val, 1)
-    //pipe(
-    //  factorsMultiplicity,
-   //   map(func),
-   //   reduce((acc, val) => acc * val, 1)
-   // )
   }
 
   /*
@@ -119,6 +118,38 @@ module Arithmetic {
   function listPrimesInRange (a: number, b: number): number[] {
     return range(a,b).filter((n: number): Boolean => isPrime(n))
   }
+
+/*
+  -- P40 (**) Goldbach’s conjecture.
+  -- Goldbach’s conjecture says that every positive even number greater than 2 is the sum of two prime numbers.
+  -- E.g. 28=5+23.  It is one of the most famous facts in number theory that has not been proved to be correct in the general case.
+  -- It has been numerically confirmed up to very large numbers (much larger than Scala’s Int can represent).
+  -- Write a function to find the two prime numbers that sum up to a given even integer.                      
+*/
+
+  function goldbachNumbers (n: number): number[] {
+    const primes = range(2,n).filter( (m): Boolean => isPrime(m) && isPrime(n - m))
+    if (primes.length == 0) {
+      []
+    }
+    let m = takeLeft(1)(primes)[0]
+    return [m, n-m]
+  }
+
+/*
+  -- P41 (**) A list of Goldbach compositions.
+  -- Given a range of integers by its lower and upper limit, print a list of all even numbers and their Goldbach composition.
+  goldbachCompositions :: Int -> Int -> [(Int, [Int])]
+  goldbachCompositions low high = let lo = if even low then low else succ low
+                                      hi = if even high then high else pred high
+                                  in map (\n -> (n, goldbachNumbers n)) [lo,lo+2..hi]
+*/
+
+  function goldbachCompositions (low: number, high: number): [number, number[]][] {
+    let lo = (low % 2 == 0) ? low : low + 1
+    let hi = (high % 2 == 0) ? high : high - 1
+
+    
+    return range(lo, hi, 2).map((n: number) => [n, goldbachNumbers(n)] )
+  }
 }
-
-
