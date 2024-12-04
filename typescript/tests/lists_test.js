@@ -164,5 +164,13 @@ var ListsTest;
             const result = L.dropN([1, 2, 3], 2);
             assert.deepEqual(result, [1, 3]);
         });
+        it('should not drop the Nth element if not exists', () => {
+            const result = L.dropN([1], 2);
+            assert.deepEqual(result, [1]);
+        });
+        xit('should drop the Nth element if exists', () => {
+            const result = L.dropN([1, 2, 3], 1);
+            assert.deepEqual(result, [2, 3]);
+        });
     });
 })(ListsTest || (ListsTest = {}));

@@ -179,7 +179,7 @@ function duplicateN(list, n) {
 }
 //P16 (**) Drop every Nth element from a list.
 function dropN(list, n) {
-    if (list.length == 0) {
+    if (list.length == 0 || n == 0) {
         return [];
     }
     const head = (0, Array_1.takeLeft)(n - 1)(list);

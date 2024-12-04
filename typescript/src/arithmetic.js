@@ -1,6 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isPrime = isPrime;
+exports.gcd = gcd;
+exports.primeFactors = primeFactors;
+exports.primeFactorsMultiplicity = primeFactorsMultiplicity;
+exports.listPrimesInRange = listPrimesInRange;
+exports.goldbachNumbers = goldbachNumbers;
+exports.goldbachCompositions = goldbachCompositions;
 const Array_1 = require("fp-ts/lib/Array");
 function range(start, end, step = 1) {
     const result = [];
@@ -13,7 +19,7 @@ function range(start, end, step = 1) {
 //  -- Prime numbers to test: http://compoasso.free.fr/primelistweb/page/prime/liste_online_en.php
 function isPrime(n) {
     const sqrt = Math.sqrt(n);
-    const isDivisibleBy = ((m) => n % m == 0);
+    const isDivisibleBy = (m) => n % m == 0;
     return !range(2, sqrt).some(isDivisibleBy);
 }
 /*
@@ -47,9 +53,12 @@ primeFactors n = let divs    = filter (\k -> mod n k == 0) [2..n]
                   in if factor == 0 then [] else factor : primeFactors (div n factor)
 */
 function primeFactors(n) {
-    const divs = range(0, n).filter((k) => n % k == 0);
-    const factor = (divs.length == 0) ? 0 : divs[0];
-    return (factor == 0) ? [] : primeFactors(n / factor);
+    const divs = range(2, n).filter((k) => n % k == 0);
+    const [factor, ...rest] = divs;
+    if (factor == null)
+        return [n];
+    else
+        return [factor].concat(primeFactors(n / factor));
 }
 /*
 -- P36 (**) Determine the prime factors of a given positive integer
@@ -60,12 +69,13 @@ function primeFactorsMultiplicity(n) {
     const grouped = new Map;
     for (const factor of pFactors) {
         var value = grouped.get(factor);
-        if (!value) {
+        if (value == undefined) {
             grouped.set(factor, 0);
         }
         else {
             grouped.set(factor, value + 1);
         }
+        console.log(grouped);
     }
     return Array.from(grouped);
 }

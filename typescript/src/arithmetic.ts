@@ -19,7 +19,7 @@ function range(start: number, end: number, step: number = 1): number[] {
 //  -- Prime numbers to test: http://compoasso.free.fr/primelistweb/page/prime/liste_online_en.php
 export function isPrime (n: number): Boolean {
   const sqrt = Math.sqrt(n)
-  const isDivisibleBy = ((m: number) => n % m == 0)
+  const isDivisibleBy = (m: number) => n % m == 0
 
   return !range(2,sqrt).some(isDivisibleBy)
 }
@@ -27,7 +27,7 @@ export function isPrime (n: number): Boolean {
 /*
 -- P32 (**) Determine the greatest common divisor of two positive integer numbers.
 */
-function gcd (a: number, b: number): number {
+export function gcd (a: number, b: number): number {
   return (b == 0) ? a : gcd(b, b % a)
 }
 
@@ -60,11 +60,14 @@ primeFactors n = let divs    = filter (\k -> mod n k == 0) [2..n]
                   in if factor == 0 then [] else factor : primeFactors (div n factor)
 */
 
-function primeFactors (n: number): number[] {
-  const divs = range(0,n).filter((k): Boolean => n % k == 0)
-  const factor = (divs.length == 0) ? 0 : divs[0];
+export function primeFactors (n: number): number[] {
+  const divs = range(2,n).filter((k): Boolean => n % k == 0)
+  const [factor, ...rest] = divs
 
-  return (factor == 0) ? [] : primeFactors(n / factor)
+  if(factor == null)
+    return [n]
+  else
+    return [factor].concat(primeFactors(n / factor))
 }
 
 /*
@@ -72,19 +75,20 @@ function primeFactors (n: number): number[] {
 -- Construct a list containing the prime factors and their multiplicity.
 */
 
-function primeFactorsMultiplicity (n: number): [number, number][] {
+export function primeFactorsMultiplicity (n: number): [number, number][] {
   const pFactors = primeFactors(n)
   const grouped = new Map<number, number>
 
   for (const factor of pFactors) {
     var value = grouped.get(factor)
-    if (!value) {
+    if (value == undefined) {
       grouped.set(factor, 0)
     } else {
       grouped.set(factor, value + 1)
     }
+    console.log(grouped)
   }
-
+  
   return Array.from(grouped)
 }
 
@@ -110,7 +114,7 @@ function totientImproved (n: number): number {
 -- Given a range of integers by its lower and upper limit, construct a list of all prime numbers in that range.
 */
 
-function listPrimesInRange (a: number, b: number): number[] {
+export function listPrimesInRange (a: number, b: number): number[] {
   return range(a,b).filter((n: number): Boolean => isPrime(n))
 }
 
@@ -122,7 +126,7 @@ function listPrimesInRange (a: number, b: number): number[] {
 -- Write a function to find the two prime numbers that sum up to a given even integer.                      
 */
 
-function goldbachNumbers (n: number): number[] {
+export function goldbachNumbers (n: number): number[] {
   const primes = range(2,n).filter( (m): Boolean => isPrime(m) && isPrime(n - m))
   if (primes.length == 0) {
     []
@@ -140,7 +144,7 @@ goldbachCompositions low high = let lo = if even low then low else succ low
                                 in map (\n -> (n, goldbachNumbers n)) [lo,lo+2..hi]
 */
 
-function goldbachCompositions (low: number, high: number): [number, number[]][] {
+export function goldbachCompositions (low: number, high: number): [number, number[]][] {
   let lo = (low % 2 == 0) ? low : low + 1
   let hi = (high % 2 == 0) ? high : high - 1
 
