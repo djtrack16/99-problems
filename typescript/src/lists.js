@@ -1,9 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.penultimate = penultimate;
 exports.kthElement = kthElement;
 exports.length = length;
 exports.reverse = reverse;
 exports.isPalindrome = isPalindrome;
+exports.isPalindromeRecur = isPalindromeRecur;
+exports.removeConsecutiveDuplicates = removeConsecutiveDuplicates;
+exports.pack = pack;
+exports.decode = decode;
+exports.encodeDirect = encodeDirect;
+exports.duplicateN = duplicateN;
+exports.dropN = dropN;
+exports.lsort = lsort;
 //import { match } from 'ts-pattern';
 const Array_1 = require("fp-ts/lib/Array");
 const Option_1 = require("fp-ts/lib/Option");
@@ -15,7 +24,7 @@ function lastElem(arr) {
         return Option_1.none;
     }
     else {
-        return ((0, Option_1.some)(arr[arr.length - 1]));
+        return (0, Option_1.some)(arr[arr.length - 1]);
     }
 }
 // PO2. Find the penultimate element in a list
@@ -24,7 +33,7 @@ function penultimate(arr) {
         return Option_1.none;
     }
     else {
-        return ((0, Option_1.some)(arr[arr.length - 2]));
+        return (0, Option_1.some)(arr[arr.length - 2]);
     }
 }
 // P03. Find the K'th element of a list. The first element in the list is number 1.
@@ -73,7 +82,7 @@ function isPalindromeRecur(arr) {
         return true;
     }
     const [first, ...rest] = arr;
-    const last = lastElem(rest);
+    const last = rest[rest.length - 1];
     return first == last && isPalindromeRecur(rest.slice(0, rest.length - 1));
 }
 //-- P07. Flatten a nested list structure.
@@ -126,7 +135,7 @@ function pack(list) {
         i += 1;
     }
     const duplicates = list.slice(0, i + 1);
-    const rest = removeConsecutiveDuplicates(list.slice(i + 1));
+    const rest = pack(list.slice(i + 1));
     return [duplicates].concat(rest);
 }
 // P10 Run-length encoding of a list.
@@ -158,12 +167,12 @@ function encodeDirect(list) {
     const duplicates = spanned.init;
     const first_pair = [head, 1 + spanned.init.length];
     const next_pairs = spanned.rest;
+    //return [first_pair].concat(encodeDirect(next_pairs))
     return [];
-    //return [[head, 1 + spanned.init.length]].concat(encodeDirect(next_pairs))
 }
 // P15 (**) Duplicate the elements of a list a given number of times.
 function duplicateN(list, n) {
-    const duplicateT = ((t) => Array(n).fill(t));
+    const duplicateT = (t) => Array(n).fill(t);
     return list
         .map(duplicateT)
         .reduce((acc, t) => acc.concat(t), []);
@@ -258,7 +267,4 @@ function lsort(list) {
   
     return grouped
   }
-*/
-//export function length(arr: number[]): any {
-//  throw new Error('Function not implemented.');
-//}
+*/ 

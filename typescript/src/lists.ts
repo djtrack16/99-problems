@@ -9,7 +9,6 @@ import { Option, some, none } from 'fp-ts/lib/Option';
 
 type NestedList<T> = T | Array<NestedList<T>>
 
-
   function isEmpty <T> (arr: T[]): Boolean  {
     return arr.length == 0;
   }
@@ -18,17 +17,17 @@ type NestedList<T> = T | Array<NestedList<T>>
     if (arr.length == 0) { 
       return none
     } else {
-      return(some(arr[arr.length - 1]))
+      return some(arr[arr.length - 1])
     }
   }
 
   // PO2. Find the penultimate element in a list
 
-  function penultimate <T> (arr: T[]): Option<T> {
+  export function penultimate <T> (arr: T[]): Option<T> {
     if (arr.length <= 1) { 
       return none
     } else {
-      return(some(arr[arr.length - 2]))
+      return some(arr[arr.length - 2])
     }
   }
 
@@ -89,8 +88,7 @@ type NestedList<T> = T | Array<NestedList<T>>
       return true
     }
     const [first, ...rest] = arr;
-    const last = lastElem(rest)
-
+    const last = rest[rest.length-1]
     return first == last && isPalindromeRecur(rest.slice(0, rest.length - 1))
   }
 
@@ -137,7 +135,7 @@ type NestedList<T> = T | Array<NestedList<T>>
   // P09 Pack consecutive duplicates of list elements into sublists.
   // If a list contains repeated elements they should be placed in separate sublists.
 
-  function pack <T> (list: T[]): T[][] {
+  export function pack <T> (list: T[]): T[][] {
     if (list.length == 0) {
       return []
     }
@@ -167,7 +165,7 @@ type NestedList<T> = T | Array<NestedList<T>>
   // P12 Decode a run-length encoded list.
   // Given a run-length code list generated as specified in problem P10, construct its uncompressed version.
 
-  function decode <T> (encoding: [T, number][]): T[] {
+  export function decode <T> (encoding: [T, number][]): T[] {
     return encoding.flatMap((tuple: [T, number]): T[] => {
       const [elem, amount] = tuple
       return Array(amount).fill(elem);
@@ -178,7 +176,7 @@ type NestedList<T> = T | Array<NestedList<T>>
   // Implement the so-called run-length encoding data compression method directly.
   // I.e. don’t use other methods you’ve written (like P09’s pack); do all the work directly.
 
-  function encodeDirect <T> (list: T[]): [T, number][] {
+  export function encodeDirect <T> (list: T[]): [T, number][] {
     if (list.length == 0) {
       return []
     }
@@ -189,14 +187,14 @@ type NestedList<T> = T | Array<NestedList<T>>
     const duplicates = spanned.init
     const first_pair = [head, 1 + spanned.init.length]
     const next_pairs = spanned.rest
+    //return [first_pair].concat(encodeDirect(next_pairs))
     return []
-    //return [[head, 1 + spanned.init.length]].concat(encodeDirect(next_pairs))
   }
 
   // P15 (**) Duplicate the elements of a list a given number of times.
 
   export function duplicateN <T> (list: T[], n: number): T[] {
-    const duplicateT = ((t: T): T[] => Array(n).fill(t))
+    const duplicateT = (t: T): T[] => Array(n).fill(t)
     return list
       .map(duplicateT)
       .reduce((acc, t) => acc.concat(t), []);
@@ -204,8 +202,8 @@ type NestedList<T> = T | Array<NestedList<T>>
 
   //P16 (**) Drop every Nth element from a list.
 
-  function dropN <T> (list: T[], n: number): T[] {
-    if (list.length == 0) {
+  export function dropN <T> (list: T[], n: number): T[] {
+    if (list.length == 0 || n == 0) {
       return []
     }
     const head = takeLeft(n-1)(list)
@@ -302,7 +300,3 @@ type NestedList<T> = T | Array<NestedList<T>>
     return grouped
   }
 */
-
-//export function length(arr: number[]): any {
-//  throw new Error('Function not implemented.');
-//}
