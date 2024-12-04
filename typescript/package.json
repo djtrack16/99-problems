@@ -1,6 +1,30 @@
 {
   "dependencies": {
+    "chai": "^5.1.2",
+    "fast-check": "^3.23.1",
     "fp-ts": "^2.16.9",
     "ts-pattern": "^5.5.0"
-  }
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.10.1",
+    "mocha": "^10.8.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests",
+    "src": "lists"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

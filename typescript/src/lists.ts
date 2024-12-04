@@ -1,17 +1,13 @@
-import { match } from 'ts-pattern';
-import { array } from 'fp-ts';
+//import { match } from 'ts-pattern';
 import {
     dropLeft, 
     spanLeft,
     takeLeft,
-    takeLeftWhile
+    //takeLeftWhile
   } from 'fp-ts/lib/Array'
 import { Option, some, none } from 'fp-ts/lib/Option';
 
-
-module Lists {
-
-  type NestedList<T> = T | Array<NestedList<T>>
+type NestedList<T> = T | Array<NestedList<T>>
 
 
   function isEmpty <T> (arr: T[]): Boolean  {
@@ -38,13 +34,13 @@ module Lists {
 
   // P03. Find the K'th element of a list. The first element in the list is number 1.
 
-  function kthElement <T> (arr: T[], k: number): Option<T> {
+  export function kthElement <T> (arr: T[], k: number): Option<T> {
     return (arr.length >= k) ? some(arr[k]) : none
   }
 
   // P04. Find the number of elements of a list (besides built in fns)
 
-  function length <T> (arr: T[]): number {
+  export function length <T> (arr: T[]): number {
     const [head, ...tail] = arr;
 
     //match(arr)
@@ -60,12 +56,12 @@ module Lists {
 
   // P05. Reverse a list.
 
-  function reverse <T> (arr: T[]): T[] {
+  export function reverse <T> (arr: T[]): T[] {
     var start = 0;
     var end = arr.length - 1;
 
     while (start < end) {
-      arr[start], arr[end] = arr[end], arr[start]
+      [arr[start], arr[end]] = [arr[end], arr[start]]
       start += 1;
       end -= 1;
    }
@@ -74,7 +70,7 @@ module Lists {
 
   // P06. Find out whether a list is a palindrome.
 
-  function isPalindrome <T> (arr: T[]): Boolean {
+  export function isPalindrome <T> (arr: T[]): Boolean {
     var start = 0;
     var end = arr.length - 1;
 
@@ -88,7 +84,7 @@ module Lists {
    return true
   }
 
-  function isPalindromeRecur <T> (arr: T[]): Boolean {
+  export function isPalindromeRecur <T> (arr: T[]): Boolean {
     if (arr.length <= 1) {
       return true
     }
@@ -124,7 +120,7 @@ module Lists {
   // If a list contains repeated elements they should be replaced with a single copy of the element.
   // The order of the elements should not be changed.
 
-  function removeConsecutiveDuplicates <T> (list: T[]): T[] {
+  export function removeConsecutiveDuplicates <T> (list: T[]): T[] {
     if (list.length <= 1) {
       return list
     } else {
@@ -154,7 +150,7 @@ module Lists {
       i += 1
     }
     const duplicates = list.slice(0,i+1)
-    const rest = removeConsecutiveDuplicates(list.slice(i+1))
+    const rest = pack(list.slice(i+1))
     return [duplicates].concat(rest)
   }
 
@@ -199,7 +195,7 @@ module Lists {
 
   // P15 (**) Duplicate the elements of a list a given number of times.
 
-  function duplicateN <T> (list: T[], n: number): T[] {
+  export function duplicateN <T> (list: T[], n: number): T[] {
     const duplicateT = ((t: T): T[] => Array(n).fill(t))
     return list
       .map(duplicateT)
@@ -270,7 +266,7 @@ module Lists {
 
 */
 
-  function lsort <T> (list: T[][]): T[][] {
+  export function lsort <T> (list: T[][]): T[][] {
     return list.sort((a,b) => (a.length == b.length) ? 0 : ((a.length > b.length) ? 1 : -1))
   }
 
@@ -279,13 +275,13 @@ module Lists {
   -- But this time the objective is to sort the elements according to their length frequency;
   -- i.e. in the default, sorting is done ascendingly, lists with rare lengths are placed first,
   -- others with a more frequent length come later.
-*/
+
 
   function lsortFreq <T> (lists: T[][]): T[][] {
     
     var map = groupedListsByLength(lists)
     const keys = Object.keys(map).sort
-    var listsByFrequency = []
+    var listsByFrequency: T[][] = []
     for (const key in keys) {
       listsByFrequency.concat(map[key])
     }
@@ -305,6 +301,8 @@ module Lists {
   
     return grouped
   }
+*/
 
-  
-}
+//export function length(arr: number[]): any {
+//  throw new Error('Function not implemented.');
+//}

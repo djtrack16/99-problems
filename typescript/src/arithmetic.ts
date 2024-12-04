@@ -25,7 +25,7 @@ module Arithmetic {
 //  -- Prime numbers to test: http://compoasso.free.fr/primelistweb/page/prime/liste_online_en.php
   function isPrime (n: number): Boolean {
     const sqrt = Math.sqrt(n)
-    const isDivisibleBy = ((m => n % m == 0))
+    const isDivisibleBy = ((m: number) => n % m == 0)
 
     return !range(2,sqrt).some(isDivisibleBy)
   }
@@ -83,10 +83,11 @@ module Arithmetic {
     const grouped = new Map<number, number>
 
     for (const factor of pFactors) {
-      if (!grouped[factor]) {
-        grouped[factor] = 0
+      var value = grouped.get(factor)
+      if (!value) {
+        grouped.set(factor, 0)
       } else {
-        grouped[factor] += 1
+        grouped.set(factor, value + 1)
       }
     }
   
@@ -98,7 +99,7 @@ module Arithmetic {
   -- See problem P34 for the definition of Euler’s totient function.  If the list of the prime factors of a number 
   -- m is known in the form of problem P36 then the function ϕ(m) can be efficiently calculated as follows
   -- https://aperiodic.net/pip/scala/s-99/#p37
-*/
+
 
   function totientImproved (n: number): number {
     const factorsMultiplicity = primeFactorsMultiplicity(n)
@@ -108,7 +109,7 @@ module Arithmetic {
     )
     return factorsMultiplicity.map(func).reduce((acc, val) => acc * val, 1)
   }
-
+*/
   /*
 
   -- P39 (*) A list of prime numbers.
