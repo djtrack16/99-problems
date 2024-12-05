@@ -26,7 +26,7 @@ class Arithmetic
   # Construct a flat list containing the prime factors in ascending order.
   def self.prime_factors(n)
     divisor = (2..n).find { |k| n % k == 0 }
-    divisor ? [divisor] + prime_factors(n/divisor) : []
+    divisor ? [divisor] + prime_factors(n/divisor) : [n]
   end
 
   # P36 (**) Determine the prime factors of a given positive integer (2).
