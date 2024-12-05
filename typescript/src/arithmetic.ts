@@ -18,6 +18,7 @@ function range(start: number, end: number, step: number = 1): number[] {
 //  -- P31 (**) Determine whether a given integer number is prime.
 //  -- Prime numbers to test: http://compoasso.free.fr/primelistweb/page/prime/liste_online_en.php
 export function isPrime (n: number): Boolean {
+  if (n <= 1) { return false }
   const sqrt = Math.sqrt(n)
   const isDivisibleBy = (m: number) => n % m == 0
 
@@ -28,7 +29,7 @@ export function isPrime (n: number): Boolean {
 -- P32 (**) Determine the greatest common divisor of two positive integer numbers.
 */
 export function gcd (a: number, b: number): number {
-  return (b == 0) ? a : gcd(b, b % a)
+  return (b == 0) ? a : gcd(b, a % b)
 }
 
 /*
@@ -75,21 +76,20 @@ export function primeFactors (n: number): number[] {
 -- Construct a list containing the prime factors and their multiplicity.
 */
 
-export function primeFactorsMultiplicity (n: number): [number, number][] {
+export function primeFactorsMultiplicity (n: number): Map<number, number> {
   const pFactors = primeFactors(n)
   const grouped = new Map<number, number>
 
   for (const factor of pFactors) {
     var value = grouped.get(factor)
-    if (value == undefined) {
-      grouped.set(factor, 0)
+    if (!value) {
+      grouped.set(factor, 1)
     } else {
       grouped.set(factor, value + 1)
     }
-    console.log(grouped)
   }
   
-  return Array.from(grouped)
+  return grouped
 }
 
 /*

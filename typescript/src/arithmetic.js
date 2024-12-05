@@ -18,6 +18,9 @@ function range(start, end, step = 1) {
 //  -- P31 (**) Determine whether a given integer number is prime.
 //  -- Prime numbers to test: http://compoasso.free.fr/primelistweb/page/prime/liste_online_en.php
 function isPrime(n) {
+    if (n <= 1) {
+        return false;
+    }
     const sqrt = Math.sqrt(n);
     const isDivisibleBy = (m) => n % m == 0;
     return !range(2, sqrt).some(isDivisibleBy);
@@ -26,7 +29,7 @@ function isPrime(n) {
 -- P32 (**) Determine the greatest common divisor of two positive integer numbers.
 */
 function gcd(a, b) {
-    return (b == 0) ? a : gcd(b, b % a);
+    return (b == 0) ? a : gcd(b, a % b);
 }
 /*
 -- P33 (*) Determine whether two positive integer numbers are coprime.
@@ -69,15 +72,14 @@ function primeFactorsMultiplicity(n) {
     const grouped = new Map;
     for (const factor of pFactors) {
         var value = grouped.get(factor);
-        if (value == undefined) {
-            grouped.set(factor, 0);
+        if (!value) {
+            grouped.set(factor, 1);
         }
         else {
             grouped.set(factor, value + 1);
         }
-        console.log(grouped);
     }
-    return Array.from(grouped);
+    return grouped;
 }
 /*
 -- P37 (**) Calculate Euler’s totient function ϕ(m) (improved).
